@@ -31,7 +31,7 @@ namespace Tracker.Models
 
         public static Vendor Find(int id)
         {
-            return _vendors[id];
+            return _vendors[id - 1];
         }
 
     }
