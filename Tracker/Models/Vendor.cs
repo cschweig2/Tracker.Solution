@@ -23,5 +23,11 @@ namespace Tracker.Models
         {
             return _vendors;
         }
+
+        public static void ClearAll()
+        {
+            _vendors.Clear();
+        }
+
     }
 }

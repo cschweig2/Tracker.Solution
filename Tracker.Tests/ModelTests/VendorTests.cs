@@ -6,8 +6,12 @@ using System;
 namespace Tracker.Tests
 {
     [TestClass]
-    public class VendorTests
+    public class VendorTests : IDisposable
     {
+        public void Dispose()
+        {
+            Vendor.ClearAll();
+        }
         [TestMethod]
         public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
         {
@@ -31,6 +35,13 @@ namespace Tracker.Tests
             newVendor.Name = newName;
             string result = newVendor.Name;
             Assert.AreEqual(newName, result);
+        }
+        [TestMethod]
+        public void GetAll_ReturnsEmptyListOfVendors_VendorList()
+        {
+            List<Vendor> vendors = new List<Vendor> {};
+            List<Vendor> result = Vendor.GetAll();
+            CollectionAssert.AreEqual(vendors, result);
         }
     }
 }
