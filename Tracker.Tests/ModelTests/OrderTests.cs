@@ -55,7 +55,7 @@ namespace Tracker.Tests
         public void GetId_ReturnsIdOfOrder_Int()
         {
             Order newOrder = new Order("title", "description", 25, 12182020);
-            int testId = 2;
+            int testId = 1;
             int result = newOrder.Id;
             Assert.AreEqual(testId, result);
         }
