@@ -91,7 +91,7 @@ No known bugs at this time.
     <td>7</td>
     <td>Finds an order from corresponding Id</td>
     <td>Order.Find(1)</td>
-    <td>order1;</td>
+    <td>order1</td>
   </tr>
   <tr>
     <td>8</td>
@@ -133,7 +133,7 @@ No known bugs at this time.
     <td>14</td>
     <td>Finds a vendor from corresponding Id</td>
     <td>Vendor.Find(1)</td>
-    <td>vendor1;</td>
+    <td>vendor1</td>
   </tr>
 </table>
 <br>
