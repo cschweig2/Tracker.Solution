@@ -117,6 +117,12 @@ No known bugs at this time.
     <td>Vendor.GetAll()</td>
     <td>List<Vendor> _vendors = { };</td>
   </tr>
+  <tr>
+    <td>12</td>
+    <td>GetAll() returns full list of vendors</td>
+    <td>Vendor.GetAll()</td>
+    <td>List<Vendor> _vendors = { vendor1 };</td>
+  </tr>
 </table>
 <br>
 
