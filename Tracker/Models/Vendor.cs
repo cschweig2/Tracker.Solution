@@ -6,5 +6,6 @@ namespace Tracker.Models
 {
     public class Vendor
     {
+        
     }
 }
