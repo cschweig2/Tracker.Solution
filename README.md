@@ -86,6 +86,12 @@ No known bugs at this time.
     <td>Order.Id</td>
     <td>1</td>
   </tr>
+  <tr>
+    <td>7</td>
+    <td>Finds an object from corresponding Id</td>
+    <td>Order.Find(1)</td>
+    <td>order1;</td>
+  </tr>
 </table>
 <br>
 
