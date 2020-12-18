@@ -6,6 +6,18 @@ namespace Tracker.Models
 {
     public class Vendor
     {
-        
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int Id { get; }
+        private List<Vendor> _vendors = new List<Vendor> {};
+
+        public Vendor(string name, string description)
+        {
+            Name = name;
+            Name = "name";
+            Description = description;
+            _vendors.Add(this);
+            Id = _vendors.Count;
+        }
     }
 }
