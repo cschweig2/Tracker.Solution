@@ -43,6 +43,7 @@ No known bugs at this time.
 
 ## Test Specs
 
+
 <table>
   <tr>
     <th>Test #</th>
@@ -92,9 +93,16 @@ No known bugs at this time.
     <td>Order.Find(1)</td>
     <td>order1;</td>
   </tr>
+  <tr>
+    <td>8</td>
+    <td>Creates an instance of Vendor</td>
+    <td>Vendor()</td>
+    <td>vendor</td>
+  </tr>
 </table>
 <br>
 
+//TODO reformat expected behavior to use same tense
 
 ## Support and contact details
 
