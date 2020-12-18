@@ -51,5 +51,13 @@ namespace Tracker.Tests
             List<Vendor> result = Vendor.GetAll();
             CollectionAssert.AreEqual(vendors, result);
         }
+        [TestMethod]
+        public void GetId_ReturnsIdOfVendor_Int()
+        {
+            Vendor vendor = new Vendor("name", "description");
+            int testId = 2;
+            int result = vendor.Id;
+            Assert.AreEqual(testId, result);
+        }
     }
 }
