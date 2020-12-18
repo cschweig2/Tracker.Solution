@@ -28,7 +28,7 @@ namespace Tracker.Tests
             string name = "Patty's Cafe";
             string newName = "Jim's Cafe";
             Vendor newVendor = new Vendor(name, "description");
-            newVendor.Name = name;
+            newVendor.Name = newName;
             string result = newVendor.Name;
             Assert.AreEqual(newName, result);
         }
