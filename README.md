@@ -52,9 +52,9 @@ No known bugs at this time.
   </tr>
   <tr>
     <td>1</td>
-    <td>Create a Bread class</td>
-    <td>Bread bread = new Bread();</td>
-    <td>bread</td>
+    <td>Create a Order class</td>
+    <td>Order Order = new Order();</td>
+    <td>order</td>
   </tr>
 </table>
 <br>
