@@ -69,6 +69,7 @@ _If you run into any issues, you can contact the creator at chelraebecker@gmail.
 _VS Code_ <br>
 _C# version 7.3_<br>
 _.NET Core version 2.2_<br>
+_Razor_<br>
 _REPL_<br>
 
 ## Legal
