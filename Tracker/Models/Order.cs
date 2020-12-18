@@ -13,7 +13,6 @@ namespace Tracker.Models
         public Order(string title, string description, int price, int date)
         {
             Title = title;
-            Title = "hello";
             Description = description;
             Price = price;
             Date = date;
