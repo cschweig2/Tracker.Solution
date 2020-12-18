@@ -9,7 +9,7 @@ namespace Tracker.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int Id { get; }
-        public static List<Vendor> Orders = new List<Vendor> {};
+        public List<Vendor> Orders { get; set; }
 
         public Vendor(string name, string description)
         {
@@ -17,6 +17,7 @@ namespace Tracker.Models
             Description = description;
             Orders.Add(this);
             Id = Orders.Count;
+            Orders = new List<Order> { };
         }
 
         public static List<Vendor> GetAll()
