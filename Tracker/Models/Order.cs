@@ -11,6 +11,7 @@ namespace Tracker.Models
         public int Date { get; set; }
         public int Id { get; }
         private static List<Order> _instances = new List<Order> {};
+        private static List<Order> testList = new List<Order> {};
 
         public Order(string title, string description, int price, int date)
         {
@@ -24,7 +25,7 @@ namespace Tracker.Models
 
         public static List<Order> GetAll()
         {
-            return _instances;
+            return testList;
         }
 
         public static void ClearAll()

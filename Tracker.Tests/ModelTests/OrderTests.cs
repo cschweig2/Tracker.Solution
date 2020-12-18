@@ -43,5 +43,13 @@ namespace Tracker.Tests
             List<Order> result = Order.GetAll();
             CollectionAssert.AreEqual(orders, result);
         }
+        [TestMethod]
+        public void GetAll_ReturnsFullListOfOrders_OrderList()
+        {
+            Order order1 = new Order("title", "description", 25, 12182020);
+            List<Order> orders = new List<Order> { order1 };
+            List<Order> result = Order.GetAll();
+            CollectionAssert.AreEqual(orders, result);
+        }
     }
 }
