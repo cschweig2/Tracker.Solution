@@ -14,7 +14,6 @@ namespace Tracker.Models
         public Vendor(string name, string description)
         {
             Name = name;
-            Name = "name";
             Description = description;
             _vendors.Add(this);
             Id = _vendors.Count;
