@@ -73,13 +73,13 @@ No known bugs at this time.
     <td>4</td>
     <td>GetAll() function returns an empty list of orders</td>
     <td>Order.GetAll()</td>
-    <td>List<Order> orders = { }; </td>
+    <td>List<Order> _instances = { }; </td>
   </tr>
   <tr>
     <td>5</td>
     <td>GetAll() function returns a full list of orders</td>
     <td>Order.GetAll()</td>
-    <td>List<Order> orders = { order1 }; </td>
+    <td>List<Order> _instances = { order1 }; </td>
   </tr>
   <tr>
     <td>6</td>
@@ -110,6 +110,12 @@ No known bugs at this time.
     <td>Set name of vendor</td>
     <td>Vendor.Name = updatedName;</td>
     <td>"Jim's Cafe"</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>GetAll() returns an empty list of vendors</td>
+    <td>Vendor.GetAll()</td>
+    <td>List<Vendor> _vendors = { };</td>
   </tr>
 </table>
 <br>
