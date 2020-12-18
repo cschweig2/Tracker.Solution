@@ -1,11 +1,11 @@
 @using Tracker.Models;
 
-<h2>Orders under this Vendor:</h2>
+<h2>Orders under @Model["vendor"].Name:</h2>
 
 <ol>
 @foreach (Order orders in @Model["orders"])
 {
-    <li>@orders.Title</li>
+    <li><a href="/vendors/@Model["vendor"].Id/orders/@orders.Id">@orders.Title</a></li>
 }
 </ol>
 
