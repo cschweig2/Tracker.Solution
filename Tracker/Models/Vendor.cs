@@ -29,5 +29,10 @@ namespace Tracker.Models
             _vendors.Clear();
         }
 
+        public static Vendor Find(int id)
+        {
+            return _vendors[id];
+        }
+
     }
 }
