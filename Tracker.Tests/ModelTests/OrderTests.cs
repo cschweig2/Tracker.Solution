@@ -6,8 +6,12 @@ using System;
 namespace Tracker.Tests
 {
     [TestClass]
-    public class OrderTests
+    public class OrderTests : IDisposable
     {
+        public void Dispose()
+        {
+            Order.ClearAll();
+        }
         [TestMethod]
         public void OrderConstructor_CreatesInstanceOfOrder_Order()
         {
@@ -28,10 +32,16 @@ namespace Tracker.Tests
             string title = "Patty's Pastry Order";
             Order newOrder = new Order(title, "description", 25, 12182020);
             string newTitle = "Justin's Pastry Order";
-            string otherNewTitle = "Test Title";
             newOrder.Title = newTitle;
             string result = newOrder.Title;
             Assert.AreEqual(newTitle, result);
+        }
+        [TestMethod]
+        public void GetAll_ReturnsEmptyListOfOrders_OrderList()
+        {
+            List<Order> orders = new List<Order> {};
+            List<Order> result = Order.GetAll();
+            CollectionAssert.AreEqual(orders, result);
         }
     }
 }
