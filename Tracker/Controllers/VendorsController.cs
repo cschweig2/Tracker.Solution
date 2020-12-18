@@ -33,16 +33,16 @@ namespace Tracker.Controllers
             Dictionary<string, object> model = new Dictionary<string, object>();
             Vendor selectedVendor = Vendor.Find(id);
             List<Order> vendorOrder = selectedVendor.Orders;
-            model.Add("vendors", selectedVendor);
+            model.Add("vendor", selectedVendor);
             model.Add("orders", vendorOrder);
             return View(model);
         }
 
-        [HttpPost("/vendors/{id}/orders")]
-        public ActionResult Create(int id, string title, string description, int price, int date)
+        [HttpPost("/vendors/{vendorId}/orders")]
+        public ActionResult Create(int vendorId, string title, string description, int price, int date)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
-            Vendor foundVendor = Vendor.Find(id);
+            Vendor foundVendor = Vendor.Find(vendorId);
             Order newOrder = new Order(title, description, price, date);
             foundVendor.AddOrder(newOrder);
             List<Order> vendorOrders = foundVendor.Orders;
@@ -50,7 +50,6 @@ namespace Tracker.Controllers
             model.Add("vendor", foundVendor);
             return View("Show", model);
         }
-
 
     }
 }
