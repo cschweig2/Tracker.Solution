@@ -39,7 +39,7 @@ namespace Tracker.Tests
         [TestMethod]
         public void GetAll_ReturnsEmptyListOfVendors_VendorList()
         {
-            List<Vendor> vendors = new List<Vendor> {};
+            List<Vendor> vendors = new List<Vendor> { };
             List<Vendor> result = Vendor.GetAll();
             CollectionAssert.AreEqual(vendors, result);
         }
