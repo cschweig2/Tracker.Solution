@@ -74,6 +74,12 @@ No known bugs at this time.
     <td>Order.GetAll()</td>
     <td>List<Order> orders = { }; </td>
   </tr>
+  <tr>
+    <td>5</td>
+    <td>GetAll() function returns a full list of orders</td>
+    <td>Order.GetAll()</td>
+    <td>List<Order> orders = { order1 }; </td>
+  </tr>
 </table>
 <br>
 
