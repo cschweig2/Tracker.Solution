@@ -135,6 +135,12 @@ No known bugs at this time.
     <td>Vendor.Find(1)</td>
     <td>vendor1</td>
   </tr>
+  <tr>
+    <td>15</td>
+    <td>Adds an order to a specific category</td>
+    <td>Vendor.AddOrder()</td>
+    <td>order1</td>
+  </tr>
 </table>
 <br>
 
