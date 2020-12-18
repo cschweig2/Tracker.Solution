@@ -6,12 +6,8 @@ using System;
 namespace Tracker.Tests
 {
     [TestClass]
-    public class OrderTests // : IDisposable
+    public class OrderTests
     {
-        // public void Dispose()
-        // {
-        // Order.ClearAll();
-        // }
         [TestMethod]
         public void OrderConstructor_CreatesInstanceOfOrder_Order()
         {
@@ -37,7 +33,5 @@ namespace Tracker.Tests
             string result = newOrder.Title;
             Assert.AreEqual(newTitle, result);
         }
-
-
     }
 }
