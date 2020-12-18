@@ -56,6 +56,12 @@ No known bugs at this time.
     <td>Order Order = new Order();</td>
     <td>order</td>
   </tr>
+  <tr>
+    <td>2</td>
+    <td>Can get a title from order</td>
+    <td>newOrder.Title</td>
+    <td>"Patty's Pastry Order"</td>
+  </tr>
 </table>
 <br>
 
