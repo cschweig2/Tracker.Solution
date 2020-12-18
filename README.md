@@ -80,6 +80,12 @@ No known bugs at this time.
     <td>Order.GetAll()</td>
     <td>List<Order> orders = { order1 }; </td>
   </tr>
+  <tr>
+    <td>6</td>
+    <td>Return Id of each order</td>
+    <td>Order.Id</td>
+    <td>1</td>
+  </tr>
 </table>
 <br>
 
