@@ -99,6 +99,12 @@ No known bugs at this time.
     <td>Vendor()</td>
     <td>vendor</td>
   </tr>
+  <tr>
+    <td>9</td>
+    <td>Get name of vendor</td>
+    <td>Vendor.Name</td>
+    <td>"Patty's Cafe"</td>
+  </tr>
 </table>
 <br>
 
