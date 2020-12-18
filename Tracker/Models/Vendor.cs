@@ -9,30 +9,31 @@ namespace Tracker.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int Id { get; }
-        public List<Vendor> Orders { get; set; }
+        private static List<Vendor> _vendors = new List<Vendor> {};
+        public List<Order> Orders { get; set; }
 
         public Vendor(string name, string description)
         {
             Name = name;
             Description = description;
-            Orders.Add(this);
-            Id = Orders.Count;
-            Orders = new List<Order> { };
+            _vendors.Add(this);
+            Id = _vendors.Count;
+            Orders = new List<Order>{};
         }
 
         public static List<Vendor> GetAll()
         {
-            return Orders;
+            return _vendors;
         }
 
         public static void ClearAll()
         {
-            Orders.Clear();
+            _vendors.Clear();
         }
 
         public static Vendor Find(int id)
         {
-            return Orders[id - 1];
+            return _vendors[id - 1];
         }
 
     }
