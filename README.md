@@ -105,6 +105,12 @@ No known bugs at this time.
     <td>Vendor.Name</td>
     <td>"Patty's Cafe"</td>
   </tr>
+  <tr>
+    <td>10</td>
+    <td>Set name of vendor</td>
+    <td>Vendor.Name = updatedName;</td>
+    <td>"Jim's Cafe"</td>
+  </tr>
 </table>
 <br>
 
