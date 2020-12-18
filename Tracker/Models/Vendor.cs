@@ -10,7 +10,6 @@ namespace Tracker.Models
         public string Description { get; set; }
         public int Id { get; }
         private static List<Vendor> _vendors = new List<Vendor> {};
-        private static List<Vendor> testList = new List<Vendor> {};
 
         public Vendor(string name, string description)
         {
@@ -22,7 +21,7 @@ namespace Tracker.Models
 
         public static List<Vendor> GetAll()
         {
-            return testList;
+            return _vendors;
         }
 
         public static void ClearAll()
