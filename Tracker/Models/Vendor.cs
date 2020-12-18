@@ -9,7 +9,7 @@ namespace Tracker.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int Id { get; }
-        private List<Vendor> _vendors = new List<Vendor> {};
+        private static List<Vendor> _vendors = new List<Vendor> {};
 
         public Vendor(string name, string description)
         {
@@ -17,6 +17,11 @@ namespace Tracker.Models
             Description = description;
             _vendors.Add(this);
             Id = _vendors.Count;
+        }
+
+        public static List<Vendor> GetAll()
+        {
+            return _vendors;
         }
     }
 }
