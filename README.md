@@ -68,6 +68,12 @@ No known bugs at this time.
     <td>newOrder.Title = updatedTitle;</td>
     <td>"Justin's Pastry Order"</td>
   </tr>
+  <tr>
+    <td>4</td>
+    <td>GetAll() function returns an empty list of orders</td>
+    <td>Order.GetAll()</td>
+    <td>List<Order> orders = { }; </td>
+  </tr>
 </table>
 <br>
 
