@@ -123,6 +123,12 @@ No known bugs at this time.
     <td>Vendor.GetAll()</td>
     <td>List<Vendor> _vendors = { vendor1 };</td>
   </tr>
+  <tr>
+    <td>13</td>
+    <td>Returns Id of vendor</td>
+    <td>Vendor.Id</td>
+    <td>1</td>
+  </tr>
 </table>
 <br>
 
