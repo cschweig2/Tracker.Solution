@@ -62,6 +62,12 @@ No known bugs at this time.
     <td>newOrder.Title</td>
     <td>"Patty's Pastry Order"</td>
   </tr>
+  <tr>
+    <td>3</td>
+    <td>Can set a title for an order</td>
+    <td>newOrder.Title = updatedTitle;</td>
+    <td>"Justin's Pastry Order"</td>
+  </tr>
 </table>
 <br>
 
