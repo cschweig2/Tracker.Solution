@@ -55,7 +55,7 @@ namespace Tracker.Tests
         public void GetId_ReturnsIdOfVendor_Int()
         {
             Vendor vendor = new Vendor("name", "description");
-            int testId = 2;
+            int testId = 1;
             int result = vendor.Id;
             Assert.AreEqual(testId, result);
         }
