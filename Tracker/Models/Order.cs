@@ -24,7 +24,6 @@ namespace Tracker.Models
 
         public static List<Order> GetAll()
         {
-            Order order = new Order("title", "description", 1, 2);
             return _instances;
         }
 
