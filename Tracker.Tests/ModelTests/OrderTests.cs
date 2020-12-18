@@ -59,5 +59,14 @@ namespace Tracker.Tests
             int result = newOrder.Id;
             Assert.AreEqual(testId, result);
         }
+        [TestMethod]
+        public void Find_ReturnsOrderAtThatId_Order()
+        {
+            Order order1 = new Order("title", "description", 25, 12182020);
+            Order order2 = new Order("title", "description", 25, 12182020);
+            List<Order> orders = new List<Order> { order1, order2 };
+            Order result = Order.Find(1);
+            Assert.AreEqual(order1, result);
+        }
     }
 }
