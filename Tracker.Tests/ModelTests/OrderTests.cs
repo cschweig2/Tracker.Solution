@@ -33,7 +33,7 @@ namespace Tracker.Tests
             Order newOrder = new Order(title, "description", 25, 12182020);
             string newTitle = "Justin's Pastry Order";
             string otherNewTitle = "Test Title";
-            newOrder.Title = otherNewTitle;
+            newOrder.Title = newTitle;
             string result = newOrder.Title;
             Assert.AreEqual(newTitle, result);
         }
