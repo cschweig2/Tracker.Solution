@@ -28,10 +28,10 @@ _Vendor and Order Tracker is a program that tracks the vendors that purchase bak
 
 ### View locally
 
-1. _Open web browser and go to https://github.com/cschweig2/Bakery.Solution._
+1. _Open web browser and go to https://github.com/cschweig2/Tracker.Solution._
 2. _After clicking the green "code" button, you can copy the URL for the repository._
 3. _Open a terminal window, such as Command Prompt or Git Bash._<br>
-  3a. _Type in this command: "git clone", followed by the URL you just copied. The full command should look like this: "git clone https://github.com/cschweig2/Bakery.Solution"._
+  3a. _Type in this command: "git clone", followed by the URL you just copied. The full command should look like this: "git clone https://github.com/cschweig2/Tracker.Solution"._
 4. _View the code on your favorite text editor, such as Visual Studio Code._
 5._To run the program, you will need to follow the above steps for installing ASP.NET Core framework._ 
 6. _Navigate to the Bakery and Bakery.Tests folders and enter "dotnet restore" in the command line to install packages._
@@ -53,19 +53,19 @@ No known bugs at this time.
   </tr>
   <tr>
     <td>1</td>
-    <td>Create a Order class</td>
+    <td>Creates an instance of Order</td>
     <td>Order Order = new Order();</td>
     <td>order</td>
   </tr>
   <tr>
     <td>2</td>
-    <td>Can get a title from order</td>
+    <td>Gets a title from order</td>
     <td>newOrder.Title</td>
     <td>"Patty's Pastry Order"</td>
   </tr>
   <tr>
     <td>3</td>
-    <td>Can set a title for an order</td>
+    <td>Sets a title for an order</td>
     <td>newOrder.Title = updatedTitle;</td>
     <td>"Justin's Pastry Order"</td>
   </tr>
@@ -83,7 +83,7 @@ No known bugs at this time.
   </tr>
   <tr>
     <td>6</td>
-    <td>Return Id of each order</td>
+    <td>Returns Id of each order</td>
     <td>Order.Id</td>
     <td>1</td>
   </tr>
@@ -101,13 +101,13 @@ No known bugs at this time.
   </tr>
   <tr>
     <td>9</td>
-    <td>Get name of vendor</td>
+    <td>Gets name of vendor</td>
     <td>Vendor.Name</td>
     <td>"Patty's Cafe"</td>
   </tr>
   <tr>
     <td>10</td>
-    <td>Set name of vendor</td>
+    <td>Sets name of vendor</td>
     <td>Vendor.Name = updatedName;</td>
     <td>"Jim's Cafe"</td>
   </tr>
@@ -144,7 +144,6 @@ No known bugs at this time.
 </table>
 <br>
 
-//TODO reformat expected behavior to use same tense
 
 ## Support and contact details
 
