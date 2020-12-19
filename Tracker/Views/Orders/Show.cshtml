@@ -4,12 +4,10 @@
 }
 <div class="container">
     <h3>Order @Model["order"].Title Details</h3>
-
-    <h2>Title: @Model["order"].Title</h2>
-    <h2>Description: @Model["order"].Description</h2>
-    <h2>Total order price: @Model["order"].Price</h2>
-    <h2>Order date (MMDDYYYY): @Model["order"].Date</h2>
-    <h2>Vendor name: @Model["vendor"].Name</h2>
-
-    <a href="/vendors/@Model["vendor"].Id/orders/">Go back to list of orders</a>
+    <h4>Title: @Model["order"].Title</h4>
+    <h4>Description: @Model["order"].Description</h4>
+    <h4>Total order price: @Model["order"].Price</h4>
+    <h4>Order date (MMDDYYYY): @Model["order"].Date</h4>
+    <h4>Vendor name: @Model["vendor"].Name</h4>
+    <a href="/vendors/@Model["vendor"].Id">Go back to list of orders</a>
 </div>
